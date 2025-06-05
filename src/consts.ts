@@ -23,14 +23,14 @@ import type {AnalyticsConfig} from "./types/analyticsTypes"
  *    All tags will be displayed in single page "/tags".
  */
 export const site = {
-  title: 'Astro Theme Yi', // required
-  favicon: '/favicon.svg', // required
+  title: 'runhao 的灵光一闪', // required
+  favicon: '/favicon-32x32.png', // required
   description: 'Welcome to my independent blog website! ',
-  author: "Astro-Yi", // required
-  avatar: '/avatar.png', // required
+  author: "Runhao", // required
+  avatar: '/cat.jpg', // required
   url: 'https://astro-yi-nu.vercel.app', // required
   baseUrl: '', // When using GitHubPages, you must enter the repository name startWith '/'. e.g. '/astro-blog'
-  motto: 'Actions speak louder than words.',
+  motto: 'Thrive amidst uncertainty.',
   recentBlogSize: 5,
   archivePageSize: 25,
   postPageSize: 10,
@@ -49,7 +49,7 @@ export const site = {
  * memosPageSize {number} 10
  */
 export const config = {
-  lang: 'en', // en | zh-cn | zh-Hant | cs
+  lang: 'zh-cn', // en | zh-cn | zh-Hant | cs
   codeFoldingStartLines: 16, // Need to re-run the project to take effect
 
   // memos config
@@ -71,11 +71,11 @@ export const categories = [
     iconClass: "ri-draft-line",
     href: "/blog/1",
   },
-  {
-    name: "Feed",
-    iconClass: "ri-lightbulb-flash-line",
-    href: "/feed/1",
-  },
+  // {
+  //   name: "Feed",
+  //   iconClass: "ri-lightbulb-flash-line",
+  //   href: "/feed/1",
+  // },
   // {
   //   name: "Memos",
   //   iconClass: "ri-quill-pen-line",
@@ -86,65 +86,70 @@ export const categories = [
     iconClass: "ri-archive-line",
     href: "/archive/1",
   },
-  {
-    name: "Message",
-    iconClass: "ri-chat-1-line",
-    href: "/message",
-  },
+  // {
+  //   name: "Message",
+  //   iconClass: "ri-chat-1-line",
+  //   href: "/message",
+  // },
   {
     name: "Search",
     iconClass: "ri-search-line",
     href: "/search",
   },
-  {
-    name: "More",
-    iconClass: "ri-more-fill",
-    href: "javascript:void(0);",
-    children: [
-      {
-        name: 'About',
-        iconClass: 'ri-information-line',
-        href: '/about',
-      },
-      {
-        name: 'Friends',
-        iconClass: 'ri-user-5-line',
-        href: '/friends',
-        target: '_self',
-      },
-    ]
-  }
+  // {
+  //   name: 'About',
+  //   iconClass: 'ri-information-line',
+  //   href: '/about',
+  // },
+  // {
+  //   name: "More",
+  //   iconClass: "ri-more-fill",
+  //   href: "javascript:void(0);",
+  //   children: [
+  //     {
+  //       name: 'About',
+  //       iconClass: 'ri-information-line',
+  //       href: '/about',
+  //     },
+  //     // {
+  //     //   name: 'Friends',
+  //     //   iconClass: 'ri-user-5-line',
+  //     //   href: '/friends',
+  //     //   target: '_self',
+  //     // },
+  //   ]
+  // }
 ]
 
 /**
  * Personal link address
  */
 export const infoLinks = [
-  {
-    icon: 'ri-telegram-fill',
-    name: 'telegram',
-    outlink: '',
-  },
-  {
-    icon: 'ri-twitter-fill',
-    name: 'twitter',
-    outlink: '',
-  },
-  {
-    icon: 'ri-instagram-fill',
-    name: 'instagram',
-    outlink: '',
-  },
+  // {
+  //   icon: 'ri-telegram-fill',
+  //   name: 'telegram',
+  //   outlink: '',
+  // },
+  // {
+  //   icon: 'ri-twitter-fill',
+  //   name: 'twitter',
+  //   outlink: '',
+  // },
+  // {
+  //   icon: 'ri-instagram-fill',
+  //   name: 'instagram',
+  //   outlink: '',
+  // },
   {
     icon: 'ri-github-fill',
     name: 'github',
-    outlink: 'https://github.com/cirry/astro-yi',
+    outlink: 'https://github.com/Lurh/my-astro-blog',
   },
-  {
-    icon: 'ri-rss-fill',
-    name: 'rss',
-    outlink: '',
-  }
+  // {
+  //   icon: 'ri-rss-fill',
+  //   name: 'rss',
+  //   outlink: '/rss.xml',
+  // }
 ]
 
 /**
@@ -158,9 +163,9 @@ export const infoLinks = [
 export const donate = {
   enable: false,
   tip: "Thanks for the coffee !!!☕",
-  wechatQRCode: "/WeChatQR.png",
-  alipayQRCode: "/AliPayQR.png",
-  paypalUrl: "https://paypal.me/xxxxxxxxxx",
+  wechatQRCode: "/wxpay.png",
+  alipayQRCode: "/alipay.jpg",
+  // paypalUrl: "https://paypal.me/xxxxxxxxxx",
 }
 
 /**
@@ -211,18 +216,19 @@ export const comment = {
 
   // giscus config
   giscusConfig: {
-    'data-repo': "",
-    'data-repo-id': "",
-    'data-category': "",
-    'data-category-id': "",
-    'data-mapping': "",
-    'data-strict': "",
-    'data-reactions-enabled': "",
-    'data-emit-metadata': "",
-    'data-input-position': "",
-    'data-theme': "",
-    'data-lang': "",
-    'crossorigin': "",
+    'data-repo': "Lurh/my-astro-blog",
+    'data-repo-id': "R_kgDOO2s9Gg",
+    'data-category': "Announcements",
+    'data-category-id': "DIC_kwDOO2s9Gs4CrFGl",
+    'data-mapping': "pathname",
+    'data-strict': "0",
+    'data-reactions-enabled': "1",
+    'data-emit-metadata': "0",
+    'data-input-position': "top",
+    'data-theme': "preferred_color_scheme",
+    'data-lang': "zh-CN",
+    "data-loading": "lazy",
+    'crossorigin': "anonymous",
   }
 
   //
