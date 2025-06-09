@@ -200,7 +200,7 @@ export const friendshipLinks =
  * walineConfig.whiteList {string[]} set some pages not to display reaction
  */
 export const comment = {
-  enable: false,
+  enable: true,
   type: 'giscus', // waline | giscus,
   walineConfig: {
     serverUrl: "",
@@ -241,11 +241,11 @@ export const comment = {
  * It defines and exports the default settings for Umami and Google Analytics.
  */
 export const analytics: AnalyticsConfig = {
-  enable: false,
+  enable: true,
   umamiConfig: {
-    enable: false,
-    id: "",
-    url: ""
+    enable: true,
+    id: "f5097d6a-ffed-4be7-8c54-f11e2e104ab4",
+    url: "blog.runhao.life"
   },
   gaConfig: {
     enable: false,
